@@ -28,4 +28,4 @@ I'm going to stop here. For those of you who want to deep dive after this worksh
 
 Now that you have an idea of what we're going to build, let's get started.
 
-[View prerequisites](prerequisites){: .btn .btn-blue }
+[View prerequisites](prerequisites){: .btn .btn-green }
