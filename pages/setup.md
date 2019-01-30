@@ -11,11 +11,11 @@ Before we can build our Flask-based web app, we need to clone the project and in
 
 1. Open command line (Windows) or terminal (macOS/Linux). In your home directory, clone the project from GitHub:
    ```
-   git clone some-repository.git
+   git clone https://github.com/erhopf/camp2019.git
    ```
 2. Navigate to the project directory:
    ```
-   cd some-repository
+   cd camp2019
    ```
 
 ## Install virtualenv and enable your dev environment
