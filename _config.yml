@@ -15,8 +15,6 @@
 # in the templates via {{ site.myvariable }}.
 title: "Camp 2019: Build a Flask app with Cog Services"
 description:
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  erhopf
 
 # Build settings
