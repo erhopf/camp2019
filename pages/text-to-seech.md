@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Synthesize speech
 nav_order: 7
 permalink: /text-to-speech

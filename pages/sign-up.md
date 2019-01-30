@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Sign-up for an Azure account
 nav_order: 1
 parent: Extra credit

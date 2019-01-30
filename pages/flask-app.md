@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Create a Flask app
 nav_order: 4
 permalink: /flask-app

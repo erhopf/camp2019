@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Deploy your app to Azure
 nav_order: 2
 parent: Extra credit

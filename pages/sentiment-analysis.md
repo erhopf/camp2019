@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Analyze sentiment
 nav_order: 6
 permalink: /analyze-sentiment

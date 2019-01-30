@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Setup your environment
 nav_order: 3
 permalink: /setup
