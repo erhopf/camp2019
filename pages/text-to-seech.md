@@ -14,6 +14,8 @@ You may feel like you've read this spiel before...you have. Just in case you ski
 
 ## Build a request to synthesize speech
 
+Open `synthesize.py` in your IDE or text editor. Then copy in this code block. Make sure to add your **Speech Services Services** subscription key and save.
+
 ```python
 import os, requests, time
 from xml.etree import ElementTree
@@ -64,11 +66,17 @@ class TextToSpeech(object):
         body = ElementTree.tostring(xml_body, encoding="utf-8")
 
         response = requests.post(constructed_url, headers=headers, data=body)
-        # Write the response as a wav file for playback. The file is located
-        # in the same directory where this sample is run.
-        print(response)
         return response.content
 ```
+
+There's a lot going on in this code block compared to translation and sentiment. Since the text-to-speech endpoint requires an access token, the subscription key must be exchanged for a token before we can synthesize speech. So, we've created a class with two methods.
+
+* `get_token()` - Performs the token exchange. Once called, this token is valid for 10 minutes.
+* `save_audio()` - Calls the text-to-speech endpoint using the access token.
+
+Unlike translation and sentiment, which have JSON message bodies, speech synthesis uses Speech Synthesis Markup Language (SSML). SSML is an XML-based markup language that allows you to choose a voice, and control volume, pronunciation and prosody of text-to-speech.
+
+In this sample, we've used `ElementTree` to construct the SSML. The `input_text` and `voice_font` are provided by the web app; and the body is encoded as UTF-8.
 
 ## Add a Flask route
 
@@ -98,7 +106,7 @@ def text_to_speech():
 
 You'll notice that this route is very similar to what we've created for translation and sentiment. This request takes two arguments: `text_input` and `voice_font`. Here, `text_input` is the translation result, and `voice_font` is the voice selected from the drop-down menu in your web app.
 
-Unlike the first two routes that return JSON data, this call will return binary audio data. If you take a look at the `main.js` file (included in the repository), you'll notice that the response is written to a blob, then loaded for playback. It also uses XMLHttpRequest instead of AJAX, due to limitations handling binary data.
+Unlike the first two routes that return JSON data, this call will return binary audio data. If you take a look at the `main.js` file (included in the repository), you'll notice that the response is written to a blob, then loaded for playback. It also uses XMLHttpRequest (XHR) instead of Ajax, due to limitations handling binary data.
 
 ## Test speech synthesis
 
