@@ -74,7 +74,7 @@ There's a lot going on in this code block compared to translation and sentiment.
 * `get_token()` - Performs the token exchange. Once called, this token is valid for 10 minutes.
 * `save_audio()` - Calls the text-to-speech endpoint using the access token.
 
-Unlike translation and sentiment, which have JSON message bodies, speech synthesis uses Speech Synthesis Markup Language (SSML). SSML is an XML-based markup language that allows you to choose a voice, and control volume, pronunciation and prosody of text-to-speech.
+Unlike translation and sentiment, which have JSON message bodies, speech synthesis uses [Speech Synthesis Markup Language (SSML)](https://docs.microsoft.com/azure/cognitive-services/speech-service/speech-synthesis-markup). SSML is an XML-based markup language that allows you to choose a voice, and control volume, pronunciation and prosody of text-to-speech.
 
 In this sample, we've used `ElementTree` to construct the SSML. The `input_text` and `voice_font` are provided by the web app; and the body is encoded as UTF-8.
 
