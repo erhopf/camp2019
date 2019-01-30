@@ -13,8 +13,8 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: "Camp 2019: Build a Flask app with Cog Services"
-description:
+title: "Camp 2019"
+description: "In this workshop we're going to build a Flask app that uses Azure Cognitive Services for text translation, sentiment analysis, and speech synthesis."
 github_username:  erhopf
 
 # Build settings
