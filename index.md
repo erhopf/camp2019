@@ -1,5 +1,5 @@
 ---
-title: Welcome to camp
+title: Welcome
 nav_order: 1
 ---
 
