@@ -25,6 +25,7 @@ remote_theme: pmarsceill/just-the-docs
 aux_links:
     "Demo":
       - "https://translator-tts-demo.azurewebsites.net/"
-    " | "
+    " | ":
+      - "#"
     "Source code":
-      - ""
+      - "https://github.com/erhopf/camp2019/tree/source-code"
