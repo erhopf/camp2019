@@ -45,7 +45,7 @@ Before we can build our Flask-based web app, we need to clone the project and in
 
    **Windows:**
    ```
-   \venv\Scripts\activate
+   venv\Scripts\activate
    ```
    After running this command, your command line or terminal session should be prefaced with `venv`.
 
@@ -82,7 +82,7 @@ pip install requests
 
    **Windows**:
    ```
-   C:\path\to\app>set FLASK_APP=app.py
+   set FLASK_APP=app.py
    ```
 
 ## Next
