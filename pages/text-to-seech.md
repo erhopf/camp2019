@@ -85,7 +85,7 @@ Let's create another route in our Flask app that accepts `POST` requests. We're 
 Locate the import statements at the top of `app.py` and update the line that reads `import translate, sentiment` to:
 
 ```python
-import translate, sentiment, synthesize, sys
+import translate, sentiment, synthesize
 ```
 
 Now our Flask app can use the method available via `synthesize.py`.
