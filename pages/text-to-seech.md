@@ -20,7 +20,8 @@ Open `synthesize.py` in your IDE or text editor. Then copy in this code block. M
 import os, requests, time
 from xml.etree import ElementTree
 
-# The Cognitive Services key won't work here.
+# Don't forget to replace with your Speech Services subscription key!
+# If you prefer to use environment variables, see Extra Credit for more info.
 subscription_key = "YOUR_SPEECH_SERV_SUBSCRIPTION_KEY_GOES_HERE"
 
 class TextToSpeech(object):

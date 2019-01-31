@@ -19,6 +19,8 @@ Open `sentiment.py` in your IDE or text editor. Then copy in this code block. Ma
 ```python
 import os, requests, uuid, json
 
+# Don't forget to replace with your Cog Services subscription key!
+# If you prefer to use environment variables, see Extra Credit for more info.
 subscription_key = "YOUR_COG_SERVICES_SUBSCRIPTION_KEY_GOES_HERE"
 
 def get_sentiment(input_text, input_language, output_text, output_language):
@@ -32,7 +34,11 @@ def get_sentiment(input_text, input_language, output_text, output_language):
         'X-ClientTraceId': str(uuid.uuid4())
     }
 
-    # You can pass more than one object in body.
+    # Our Flask route expects will supply four arguments: input_language,
+    # input_text, output_language, and output_text. When the analyze sentiment
+    # button is pressed in our Flask app, the Ajax request will grab these
+    # values from our web app, and provide them in the request. See main.js
+    # for Ajax calls.
     body = {
         "documents": [
             {
@@ -48,6 +54,7 @@ def get_sentiment(input_text, input_language, output_text, output_language):
         ]
     }
     response = requests.post(constructed_url, headers=headers, json=body)
+    # Convert the response to JSON and make it available to our web app.
     return response.json()
 ```
 

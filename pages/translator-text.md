@@ -19,8 +19,8 @@ Open `tranlate.py` in your IDE or text editor. Then copy in this code block. Mak
 ```python
 import os, requests, uuid, json
 
-# Replace with your subscription_key.
-# The sample repository includes a sample to read from environment variables.
+# Don't forget to replace with your Cog Services subscription key!
+# If you prefer to use environment variables, see Extra Credit for more info.
 subscription_key = "YOUR_COG_SERVICES_SUBSCRIPTION_KEY_GOES_HERE"
 
 def get_translation(text_input, language_output):
