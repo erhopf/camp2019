@@ -57,8 +57,8 @@ This repository is a skeleton for the project. The Python files are empty -- we'
    virtualenv venv --python="<path/to/python3/executable>"
    ```
    Here are the default install locations for Python2 and Python3.
-   * Python 2 - `C:\Python27\python.exe`
-   * Python 3 - `%LOCALAPPDATA%\Programs\Python\<python-version>\python.exe`
+   Python 2 - `C:\Python27\python.exe`
+   Python 3 - `%LOCALAPPDATA%\Programs\Python\<python-version>\python.exe`
 
 3. The commands to activate your virtual environment will vary depending on if you are a Windows or macOS/Linux user.  
 
