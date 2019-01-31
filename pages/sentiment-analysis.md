@@ -34,10 +34,10 @@ def get_sentiment(input_text, input_language, output_text, output_language):
         'X-ClientTraceId': str(uuid.uuid4())
     }
 
-    # Our Flask route expects will supply four arguments: input_language,
+    # Our Flask route will supply four arguments: input_language,
     # input_text, output_language, and output_text. When the analyze sentiment
     # button is pressed in our Flask app, the Ajax request will grab these
-    # values from our web app, and provide them in the request. See main.js
+    # values from our web app, and use them in the request. See main.js
     # for Ajax calls.
     body = {
         "documents": [

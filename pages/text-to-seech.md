@@ -24,6 +24,11 @@ from xml.etree import ElementTree
 # If you prefer to use environment variables, see Extra Credit for more info.
 subscription_key = "YOUR_SPEECH_SERV_SUBSCRIPTION_KEY_GOES_HERE"
 
+# Our Flask route will supply two arguments: input_text and voice_font.
+# When the convert text-to-speech button is pressed in our Flask app,
+# the XHR request will grab these values from our web app, and use them in
+# to construct the SSML body of the request. See main.js to review the
+# XHR request.
 class TextToSpeech(object):
     def __init__(self, input_text, voice_font):
         self.subscription_key = subscription_key
@@ -32,9 +37,9 @@ class TextToSpeech(object):
         self.timestr = time.strftime('%Y%m%d-%H%M')
         self.access_token = None
 
-    # This function performs the token exchange.
-    # The TTS endpoint requires an access token. Access tokens expire
-    # in 10 minutes.
+    # This method exchanges a subscription key for an access token. Access
+    # tokens for Speech Services REST endpoints are valid for 10 minutes.
+    # Our app is currently setup to exchange on each request.
     def get_token(self):
         fetch_token_url = 'https://westus.api.cognitive.microsoft.com/sts/v1.0/issueToken'
         headers = {
