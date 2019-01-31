@@ -42,9 +42,9 @@ This repository is a skeleton for the project. The Python files are empty -- we'
 
    **Windows CMD / Windows Bash:**
 
-   READ ME
+   IMPORTANT - READ ME
    {: .label .label-red }
-   If you have multiple versions of Python installed, you probably need to specify the path to Python 3.
+   If you have multiple versions of Python installed, you need to specify the path to Python 3.
 
    If you're working a fresh install, run:
 
