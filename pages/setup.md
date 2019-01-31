@@ -47,7 +47,11 @@ Before we can build our Flask-based web app, we need to clone the project and in
    ```
    \venv\Scripts\activate
    ```
-   After running this command, your command line or terminal session should be prefaced with `venv`. You can deactivate the session at any time by typing this into the command line or terminal `deactivate`.
+   After running this command, your command line or terminal session should be prefaced with `venv`.
+
+   ![](./images/venv.png)
+
+   You can deactivate the session at any time by typing this into the command line or terminal `deactivate`.
 
 4. Install requests. This is a library used for HTTP requests.
 
