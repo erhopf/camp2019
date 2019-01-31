@@ -3,6 +3,7 @@ title: Understanding the Javascript
 nav_order: 3
 parent: Extra credit
 permalink: /sign-up
+nav_exclude: true
 ---
 
 *Note: Not sure if I'm going to keep this section.*
