@@ -65,7 +65,8 @@ import translate
 
 Now our Flask app can use the method available via `translate.py`.
 
-Then copy this code into your application directly below `@app.route('/')`:
+Then, copy this code to the end of `app.py`:
+
 
 ```python
 @app.route('/translate-text', methods=['POST'])

@@ -74,7 +74,7 @@ import translate, sentiment
 
 Now our Flask app can use the method available via `sentiment.py`.
 
-Next, copy this code into `app.py` below your translation route:
+Next, copy this code to the end of `app.py`:
 
 ```python
 @app.route('/sentiment-analysis', methods=['POST'])

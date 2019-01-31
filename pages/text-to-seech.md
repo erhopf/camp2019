@@ -99,7 +99,7 @@ import translate, sentiment, synthesize
 
 Now our Flask app can use the method available via `synthesize.py`.
 
-Then copy this code into `app.py` below your translation route:
+Then, copy this code to the end of `app.py`:
 
 ```python
 @app.route('/text-to-speech', methods=['POST'])
