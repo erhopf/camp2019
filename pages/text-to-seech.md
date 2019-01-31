@@ -48,7 +48,8 @@ class TextToSpeech(object):
         response = requests.post(fetch_token_url, headers=headers)
         self.access_token = str(response.text)
 
-    # This function calls the TTS endpoint with the access token.
+    # This method calls the text-to-speech endpoint. The body of the request is
+    # SSML and contains the input_text and the voice used for speech synthesis.
     def save_audio(self):
         base_url = 'https://westus.tts.speech.microsoft.com/'
         path = 'cognitiveservices/v1'

@@ -23,6 +23,11 @@ import os, requests, uuid, json
 # If you prefer to use environment variables, see Extra Credit for more info.
 subscription_key = "YOUR_COG_SERVICES_SUBSCRIPTION_KEY_GOES_HERE"
 
+# Our Flask route will supply four arguments: input_language,
+# input_text, output_language, and output_text. When the analyze sentiment
+# button is pressed in our Flask app, the Ajax request will grab these
+# values from our web app, and use them in the request. See main.js
+# for Ajax calls.
 def get_sentiment(input_text, input_language, output_text, output_language):
     base_url = 'https://westus.api.cognitive.microsoft.com/text/analytics'
     path = '/v2.0/sentiment'
@@ -33,12 +38,7 @@ def get_sentiment(input_text, input_language, output_text, output_language):
         'Content-type': 'application/json',
         'X-ClientTraceId': str(uuid.uuid4())
     }
-
-    # Our Flask route will supply four arguments: input_language,
-    # input_text, output_language, and output_text. When the analyze sentiment
-    # button is pressed in our Flask app, the Ajax request will grab these
-    # values from our web app, and use them in the request. See main.js
-    # for Ajax calls.
+    # Each object must have a unique identifier.
     body = {
         "documents": [
             {
