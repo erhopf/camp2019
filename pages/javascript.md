@@ -2,7 +2,7 @@
 title: Understanding the Javascript
 nav_order: 3
 parent: Extra credit
-permalink: /sign-up
+permalink: /javascript
 nav_exclude: true
 ---
 
