@@ -1,1 +1,1 @@
-# Copy and paste code from tutorial hereself.
+# Copy and paste the code from the workshop below this line.
