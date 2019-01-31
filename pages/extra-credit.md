@@ -1,6 +1,6 @@
 ---
 title: Extra credit
-nav_order: 8
+nav_order: 9
 has_children: true
 permalink: /extra-credit
 ---

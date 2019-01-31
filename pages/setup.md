@@ -38,28 +38,14 @@ This repository is a skeleton for the project. The Python files are empty -- we'
    ```
    virtualenv venv --python=Python3
    ```
-   **Note**: We've explicitly declared that the virtual environment should use Python 3. This ensures that users with multiple Python installations are using the correct version.
+   We've explicitly declared that the virtual environment should use Python 3. This ensures that users with multiple Python installations are using the correct version.
 
    **Windows CMD / Windows Bash:**
-
-   If you're working a fresh install, run:
-
    ```
    virtualenv venv
    ```
-   If you have multiple versions of Python installed, you need to specify the path.
-   {: .label .label-red }
+   Make sure that your virtualenv is using Python 3x. If it's using Python 2.7x, please see [Troubleshooting]().
 
-   To specify the Python version in Windows, run:
-   ```
-   virtualenv venv --python="<path/to/python3/executable>"
-   ```
-   Here are the default install locations for Python2 and Python3.
-   ```
-   Python 2 - C:\Python27\python.exe
-   Python 3 - %LOCALAPPDATA%\Programs\Python\<python-version>\python.exe
-   ```
-   
 3. The commands to activate your virtual environment will vary depending on if you are a Windows or macOS/Linux user.  
 
    **macOS/Linux:**
