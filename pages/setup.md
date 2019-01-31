@@ -31,7 +31,7 @@ This repository is a skeleton for the project. The Python files are empty -- we'
    virtualenv --version
    ```
    The version should be printed to terminal. Anything else means that something went wrong. Let us know, we're here to help!
-   
+
 2. Next, let's create a virtual environment for our project. Run:
 
    **macOS/Linux:**
@@ -42,7 +42,11 @@ This repository is a skeleton for the project. The Python files are empty -- we'
 
    **Windows CMD / Windows Bash:**
 
-   If you have multiple versions of Python installed, you're going to want to specify the route. If you're working a fresh install, run:
+   READ ME
+   {: .label .label-red }
+   If you have multiple versions of Python installed, you probably need to specify the path to Python 3.
+
+   If you're working a fresh install, run:
 
    ```
    virtualenv venv
@@ -52,6 +56,9 @@ This repository is a skeleton for the project. The Python files are empty -- we'
    ```
    virtualenv venv --python="<path/to/python3/executable>"
    ```
+   Here are the default install locations for Python2 and Python3.
+   * Python 2 - `C:\Python27\python.exe`
+   * Python 3 - `%LOCALAPPDATA%\Programs\Python\<python-version>\python.exe`
 
 3. The commands to activate your virtual environment will vary depending on if you are a Windows or macOS/Linux user.  
 
