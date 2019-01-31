@@ -29,7 +29,9 @@ This code block tells my app to display `index.html` whenever a user navigates t
 flask run
 ```
 
-You should see a print out for a local server. Open a browser and navigate to that URL. You should see our single page app. However, none of the buttons work. That's because we need to build the requests to each of the Cognitive Services.
+You should see a print out for a local server. Open a browser and navigate to that URL. You should see our single page app. However, none of the buttons work. That's because we haven't build routes for our API calls yet.
+
+**Try**: Click one of the buttons, then open your command line/terminal session. You should see a 400 error.
 
 Press **Ctrl + c** to kill the application.
 
