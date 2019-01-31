@@ -9,6 +9,8 @@ Before we can build our Flask-based web app, we need to clone the project and in
 
 ## Clone the project from GitHub
 
+This repository is a skeleton for the project. The Python files are empty -- we'll be adding code throughout this tutorial. However, the `index.html` and `main.js` are ready for you from the start.
+
 1. Open command line (Windows) or terminal (macOS/Linux). In your home directory, clone the project from GitHub:
    ```
    git clone https://github.com/erhopf/camp2019.git
@@ -20,8 +22,6 @@ Before we can build our Flask-based web app, we need to clone the project and in
 
 ## Install virtualenv and enable your dev environment
 
-**PyCharm Users:** Before you go any further, if you're using PyCharm, they've got great instructions for using a virtualenv within their IDE, [Configuring Virtualenv Environment](https://www.jetbrains.com/help/pycharm/creating-virtual-environment.html).
-
 1. Now that we've cloned the project, we need to install some dependencies. First, let's install `virtualenv`. This is an isolated development environment that allows you to install packages for testing without impacting the entire system. Run:
    ```
    pip install virtualenv
@@ -31,11 +31,28 @@ Before we can build our Flask-based web app, we need to clone the project and in
    virtualenv --version
    ```
    The version should be printed to terminal. Anything else means that something went wrong. Let us know, we're here to help!
+   
 2. Next, let's create a virtual environment for our project. Run:
+
+   **macOS/Linux:**
    ```
    virtualenv venv --python=Python3
    ```
    **Note**: We've explicitly declared that the virtual environment should use Python 3. This ensures that users with multiple Python installations are using the correct version.
+
+   **Windows CMD / Windows Bash:**
+
+   If you have multiple versions of Python installed, you're going to want to specify the route. If you're working a fresh install, run:
+
+   ```
+   virtualenv venv
+   ```
+
+   If you need to specify a specific version of Python on Windows:
+   ```
+   virtualenv venv --python="<path/to/python3/executable>"
+   ```
+
 3. The commands to activate your virtual environment will vary depending on if you are a Windows or macOS/Linux user.  
 
    **macOS/Linux:**
@@ -43,10 +60,17 @@ Before we can build our Flask-based web app, we need to clone the project and in
    source venv/bin/activate
    ```
 
-   **Windows:**
+   **Windows CMD:**
    ```
    venv\Scripts\activate
    ```
+
+   **Windows Bash:**
+
+   ```
+   source venv/Scripts/activate
+   ```
+
    After running this command, your command line or terminal session should be prefaced with `venv`.
 
    ![](./images/venv.png)

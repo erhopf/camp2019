@@ -14,7 +14,9 @@ In this section we're going to do a few things:
 
 ## Build a request to translate text
 
-Open `tranlate.py` in your IDE or text editor. Then copy in this code block. Make sure to add your **Cognitive Services** subscription key and save.
+Open `translate.py` in your IDE or text editor and copy in this code.
+
+Make sure to add your **Cognitive Services** subscription key and save. Don't forget, if you're using our keys, they're available on the [prerequisites](prerequisites) page.
 
 ```python
 import os, requests, uuid, json

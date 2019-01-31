@@ -11,12 +11,13 @@ Hopefully you had some time before this workshop to install the prerequisite sof
 
 1. [Python 3.5.2 or later](https://www.python.org/downloads/)
 2. [Git tools](https://git-scm.com/downloads)
-3. An IDE or text editor, such as [Visual Studio Code](https://code.visualstudio.com/), [PyCharm](https://www.jetbrains.com/pycharm/download/), or [Atom](https://atom.io/)
+3. An IDE or text editor, such as [Visual Studio Code](https://code.visualstudio.com/) or [Atom](https://atom.io/)
+   **Note**: Testers ran into issues with PyCharm. It has Flask dependencies, which are not covered in this workshop.
 4. [Chrome](https://www.google.com/chrome/browser/) or [Firefox](https://www.mozilla.org/firefox)
 
 ## Subscription keys
 
-In case you haven't had time to get keys, we have two that are valid for the next 7 days. Make note of these, you'll need these throughout the workshop.
+In case you haven't had time to get keys, we have two that are valid for the next 7 days. Make note of these, you'll need these throughout the workshop. If you have your own keys, you can skip this step.
 
 1. A **Cognitive Services** subscription key in the **West US** region. Feel free to use this key for the workshop, however, it will expire in 7 days:
    ```

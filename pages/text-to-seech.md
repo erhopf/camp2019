@@ -14,7 +14,9 @@ You may feel like you've read this spiel before...you have. Just in case you ski
 
 ## Build a request to synthesize speech
 
-Open `synthesize.py` in your IDE or text editor. Then copy in this code block. Make sure to add your **Speech Services Services** subscription key and save.
+Open `synthesize.py` in your IDE or text editor and copy in this code.
+
+Make sure to add your **Speech Services** subscription key and save. Don't forget, if you're using our keys, they're available on the [prerequisites](prerequisites) page.
 
 ```python
 import os, requests, time
