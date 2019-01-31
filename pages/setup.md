@@ -44,7 +44,7 @@ This repository is a skeleton for the project. The Python files are empty -- we'
    ```
    virtualenv venv
    ```
-   Make sure that your virtualenv is using Python 3x. If it's using Python 2.7x, please see [Troubleshooting]().
+   Make sure that your virtualenv is using Python 3x. If you're virtualenv was created with Python 2.7.x, please see [Troubleshooting](troubleshooting).
 
 3. The commands to activate your virtual environment will vary depending on if you are a Windows or macOS/Linux user.  
 
