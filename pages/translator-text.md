@@ -31,6 +31,8 @@ def get_translation(text_input, language_output):
 
     headers = {
         'Ocp-Apim-Subscription-Key': subscription_key,
+        #If your Cog Services key is another region, change this!!
+        'Ocp-Apim-Subscription-Region': 'westus'
         'Content-type': 'application/json',
         'X-ClientTraceId': str(uuid.uuid4())
     }

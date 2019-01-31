@@ -38,15 +38,22 @@ Before we can build our Flask-based web app, we need to clone the project and in
    **Note**: We've explicitly declared that the virtual environment should use Python 3. This ensures that users with multiple Python installations are using the correct version.
 3. The commands to activate your virtual environment will vary depending on if you are a Windows or macOS/Linux user.  
 
-   **Windows:**
-   ```
-   \venv\Scripts\activate
-   ```
    **macOS/Linux:**
    ```
    source venv/bin/activate
    ```
+
+   **Windows:**
+   ```
+   \venv\Scripts\activate
+   ```
    After running this command, your command line or terminal session should be prefaced with `venv`. You can deactivate the session at any time by typing this into the command line or terminal `deactivate`.
+
+4. Install requests. This is a library used for HTTP requests.
+
+   ```
+   pip install requests
+   ```
 
 ## Install and configure Flask
 
