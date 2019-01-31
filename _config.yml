@@ -23,7 +23,8 @@ remote_theme: pmarsceill/just-the-docs
 
 # Aux links for the upper right navigation
 aux_links:
-    "Demo: Cog Services Flask app":
+    "Demo":
       - "https://translator-tts-demo.azurewebsites.net/"
-    "Full source code":
+    " | "
+    "Source code":
       - ""
