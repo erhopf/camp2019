@@ -53,11 +53,13 @@ Before we can build our Flask-based web app, we need to clone the project and in
 
    You can deactivate the session at any time by typing this into the command line or terminal `deactivate`.
 
-4. Install requests. This is a library used for HTTP requests.
+## Install requests
 
-   ```
-   pip install requests
-   ```
+Requests is a popular module that is used to send HTTP 1.1 requests. There’s no need to manually add query strings to your URLs, or to form-encode your POST data. If you'd like to know more, I encourage you to [check out their site](http://docs.python-requests.org/en/master/).
+
+```
+pip install requests
+```
 
 ## Install and configure Flask
 
