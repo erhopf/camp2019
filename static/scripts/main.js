@@ -99,18 +99,6 @@ $(function() {
           }
           if (document.getElementById("input-sentiment").textContent !== '' && document.getElementById("translation-sentiment").textContent !== ''){
             document.getElementById("sentiment").style.display = "block";
-            if (parseFloat(document.getElementById("input-sentiment").textContent) > 0.5){
-                document.getElementById("input-sentiment").style.color = "green";
-            }
-            if (parseFloat(document.getElementById("input-sentiment").textContent) < 0.5){
-                document.getElementById("input-sentiment").style.color = "red";
-            }
-            if (parseFloat(document.getElementById("translation-sentiment").textContent) > 0.5){
-                document.getElementById("translation-sentiment").style.color = "green";
-            }
-            if (parseFloat(document.getElementById("translation-sentiment").textContent) < 0.5){
-                document.getElementById("translation-sentiment").style.color = "red";
-            }
           }
         }
       });
