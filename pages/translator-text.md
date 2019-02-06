@@ -89,16 +89,12 @@ There are a few things in this code snippet I'd like to call out before we conti
 
 ## Test your web app
 
-Let's test translation in our web app.
+Let's test translation in our web app. Go ahead and run:
+```
+flask run
+```
 
-1. Go ahead and run:
-   ```
-   flask run
-   ```
-2. Navigate to the provided server address.
-3. Type text into the input area, select a language, and press translate. You should get a translation.
-
-If it doesn't work, let us know. Otherwise, press **CTRL + c** to kill the app, then head to the next step.
+Navigate to the provided server address. Type text into the input area, select a language, and press translate. You should get a translation. If it doesn't work, let us know. Otherwise, press **CTRL + c** to kill the app, then head to the next step.
 
 ## Next
 

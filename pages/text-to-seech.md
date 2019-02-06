@@ -123,16 +123,12 @@ Unlike the first two routes that return JSON data, this call will return binary 
 
 ## Test speech synthesis
 
-Let's test speech synthesis in our web app.
+Let's test speech synthesis in our web app. Go ahead and run:
+```
+flask run
+```
 
-1. Go ahead and run:
-   ```
-   flask run
-   ```
-2. Navigate to the provided server address.
-3. Type text into the input area, select a language, and press translate. You should get a translation. If it doesn't work, let us know.
-4. A voice should be auto selected based on your previous selection, however, feel free to experiment with different voices. Then click convert text-to-speech.
-5. When the audio file is ready, you should be able to press play and listen to the synthesized text.
+Navigate to the provided server address. Type text into the input area, select a language, and press translate. You should get a translation. If it doesn't work, let us know. A voice should be auto selected based on your previous selection, however, feel free to experiment with different voices. Then click convert text-to-speech. When the audio file is ready, you should be able to press play and listen to the synthesized text.
 
 That's it. You've got a working Flask app that translates text, analyzes sentiment, and converts text-to-speech.
 

@@ -98,17 +98,12 @@ You'll notice that this route is very similar to what we created for translation
 
 ## Test sentiment analysis
 
-Let's test sentiment analysis in our web app.
+Let's test sentiment analysis in our web app. Go ahead and run:
+```
+flask run
+```
 
-1. Go ahead and run:
-   ```
-   flask run
-   ```
-2. Navigate to the provided server address.
-3. Type text into the input area, select a language, and press translate. You should get a translation.
-4. Next, press **Run sentiment analysis**. If it works, you should see sentiment scores for the input and output language.
-
-If you have any trouble, let us know. Otherwise, press **CTRL + c** to kill the application and head to the next step.
+Navigate to the provided server address. Type text into the input area, select a language, and press translate. You should get a translation. Next, press **Run sentiment analysis**. If it works, you should see sentiment scores for the input and output language. If you have any trouble, let us know. Otherwise, press **CTRL + c** to kill the application and head to the next step.
 
 ## Next
 
