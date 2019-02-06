@@ -26,7 +26,7 @@ def about():
     return render_template('about.html')
 ```
 
-This code ensures that when a user navigates to `http://your-web-app.com/about` that the `about.html` file is rendered for the user.
+This code ensures that when a user navigates to `http://your-web-app.com/about` that the `about.html` file is rendered.
 
 While these samples illustrate how to render html pages for a user, routes can also be used to call APIs when a button is pressed, or take any number of actions without having to navigate from the homepage. You'll see this in action when we create routes for translation, sentiment, and speech synthesis.
 
