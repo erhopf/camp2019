@@ -36,7 +36,7 @@ This repository is a skeleton for the project. The Python files are empty -- we'
 
    **macOS/Linux:**
    ```
-   virtualenv venv --python=Python3
+   virtualenv venv --python=python3
    ```
    We've explicitly declared that the virtual environment should use Python 3. This ensures that users with multiple Python installations are using the correct version.
 
