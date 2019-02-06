@@ -11,7 +11,7 @@ Hopefully you had some time before this workshop to install the prerequisite sof
 
 1. [Python 3.5.2 or later](https://www.python.org/downloads/)
 2. [Git tools](https://git-scm.com/downloads)
-3. An IDE or text editor, such as [Visual Studio Code](https://code.visualstudio.com/) or [Atom](https://atom.io/)
+3. An IDE or text editor, such as [Visual Studio Code](https://code.visualstudio.com/) or [Atom](https://atom.io/)  
    **Note**: Testers ran into issues with PyCharm. It has Flask dependencies, which are not covered in this workshop.
 4. [Chrome](https://www.google.com/chrome/browser/) or [Firefox](https://www.mozilla.org/firefox)
 
