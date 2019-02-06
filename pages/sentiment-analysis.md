@@ -6,6 +6,10 @@ permalink: /analyze-sentiment
 
 # Analyze sentiment
 
+Sentiment Analysis is a function of the [Text Analytics API](https://docs.microsoft.com/azure/cognitive-services/Text-Analytics/overview). Provide raw text to the API, and it is analyzed for clues about positive or negative sentiment. The closer a score is to `1` indicates positive sentiment, while scores closer to `0` indicate negative sentiment. A score of `0.5` is considered neutral.
+
+In our Flask app, we're going to analyze the sentiment scores for the source text and translation output. Who knows, maybe we'll see some results where source text is positive and the translation is negative.
+
 Just like the last section, we're going to:
 
 1. Write some Python code to call the Sentiment Analysis API.
@@ -94,13 +98,17 @@ You'll notice that this route is very similar to what we created for translation
 
 ## Test sentiment analysis
 
-Let's test sentiment analysis in our web app. Go ahead and run:
+Let's test sentiment analysis in our web app.
 
-```
-flask run
-```
+1. Go ahead and run:
+   ```
+   flask run
+   ```
+2. Navigate to the provided server address.
+3. Type text into the input area, select a language, and press translate. You should get a translation.
+4. Next, press **Run sentiment analysis**. If it works, you should see sentiment scores for the input and output language.
 
-Navigate to the provided server address. Type text into the input area, select a language, and press translate. You should get a translation. Next, press **Run sentiment analysis**. If it works, you should see sentiment scores for the input and output language. If you have any trouble, let us know. Otherwise, press **CTRL + c** to kill the application and head to the next step.
+If you have any trouble, let us know. Otherwise, press **CTRL + c** to kill the application and head to the next step.
 
 ## Next
 

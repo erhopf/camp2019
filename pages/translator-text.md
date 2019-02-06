@@ -6,6 +6,8 @@ permalink: /translate-text
 
 # Translate text
 
+The [Translator Text API](https://docs.microsoft.com/azure/cognitive-services/translator/translator-info-overview) is a neural machine translation service that developers can easily integrate into their applications websites, tools, or any solution requiring multi-language support such as website localization, e-commerce, customer support, messaging applications, internal communication, and more.
+
 In this section we're going to do a few things:
 
 1. Write some Python code to call the Translator Text API.
@@ -51,7 +53,7 @@ def get_translation(text_input, language_output):
     return response.json()
 ```
 
-The Translator Text API is pretty straight forward. The function that we've created only requires two arguments: `text_input` and `language_output`. The `text_input` is provided by the text area in our HTML, and the `language_output` is from the language selector drop-down in our HTML.
+The function that we've created only requires two arguments: `text_input` and `language_output`. The `text_input` is provided by the text area in our HTML, and the `language_output` is from the language selector drop-down in our HTML.
 
 ## Add a Flask route
 
@@ -87,13 +89,16 @@ There are a few things in this code snippet I'd like to call out before we conti
 
 ## Test your web app
 
-Let's test translation in our web app. Go ahead and run:
+Let's test translation in our web app.
 
-```
-flask run
-```
+1. Go ahead and run:
+   ```
+   flask run
+   ```
+2. Navigate to the provided server address.
+3. Type text into the input area, select a language, and press translate. You should get a translation.
 
-Navigate to the provided server address. Type text into the input area, select a language, and press translate. You should get a translation. If it doesn't work, let us know. Otherwise, press **CTRL + c** to kill the app, then head to the next step.
+If it doesn't work, let us know. Otherwise, press **CTRL + c** to kill the app, then head to the next step.
 
 ## Next
 

@@ -6,6 +6,10 @@ permalink: /text-to-speech
 
 # Synthesize speech (text-to-speech)
 
+The [Text-to-Speech API](https://docs.microsoft.com/azure/cognitive-services/speech-service/text-to-speech) allows an app or service to convert text into human-sounding speech. Today, this service supports 75+ voices in more than 45 languages/locales.
+
+Our Flask app is going to use the Text-to-Speech API to convert our translation output into audio for playback in the browser.
+
 You may feel like you've read this spiel before...you have. Just in case you skipped ahead, here's what we're going to do in this section:
 
 1. Write some Python code to convert text-to-speech using Speech Services.
@@ -115,17 +119,20 @@ def text_to_speech():
 
 You'll notice that this route is very similar to what we've created for translation and sentiment. This request takes two arguments: `text_input` and `voice_font`. Here, `text_input` is the translation result, and `voice_font` is the voice selected from the drop-down menu in your web app.
 
-Unlike the first two routes that return JSON data, this call will return binary audio data. If you take a look at the `main.js` file (included in the repository), you'll notice that the response is written to a blob, then loaded for playback. It also uses XMLHttpRequest (XHR) instead of Ajax, due to limitations handling binary data.
+Unlike the first two routes that return JSON data, this call will return binary audio data. If you take a look at the `main.js` file (included in the repository), you'll notice that the response is written to a blob, then loaded for playback. It also uses [XMLHttpRequest (XHR)](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest) instead of [Ajax](http://api.jquery.com/jquery.ajax/), due to limitations handling binary data.
 
 ## Test speech synthesis
 
-Let's test speech synthesis in our web app. Go ahead and run:
+Let's test speech synthesis in our web app.
 
-```
-flask run
-```
-
-Navigate to the provided server address. Type text into the input area, select a language, and press translate. You should get a translation. If it doesn't work, let us know. A voice should be auto selected based on your previous selection, however, feel free to experiment with different voices. Then click convert text-to-speech. When the audio file is ready, you should be able to press play and listen to the synthesized text.
+1. Go ahead and run:
+   ```
+   flask run
+   ```
+2. Navigate to the provided server address.
+3. Type text into the input area, select a language, and press translate. You should get a translation. If it doesn't work, let us know.
+4. A voice should be auto selected based on your previous selection, however, feel free to experiment with different voices. Then click convert text-to-speech.
+5. When the audio file is ready, you should be able to press play and listen to the synthesized text.
 
 That's it. You've got a working Flask app that translates text, analyzes sentiment, and converts text-to-speech.
 
