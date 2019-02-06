@@ -9,7 +9,7 @@ nav_order: 1
 
 ## Welcome to camp!
 
-We're glad that you could join us for today's workshop. In the next hour, we're going to build a Flask-based web app that uses Azure Cognitive services to translate text, analyze sentiment, and synthesis translated text into speech.
+We're glad that you could join us for today's workshop. In the next hour, we're going to build a Flask-based web app that uses Azure Cognitive Services to translate text, analyze sentiment, and synthesis translated text into speech.
 
 Our focus is on the Python code and Flask routes that enable our application. We won't spend much time on the Javascript that controls the front-end, but provide all the files for you to inspect after this session (if you're a master in the art of jQuery - don't be shy, submit a PR).
 
