@@ -6,11 +6,9 @@ permalink: /javascript
 nav_exclude: true
 ---
 
-*Note: Not sure if I'm going to keep this section.*
-
 # Introduction
 
-This application relies on Javascript and jQuery to hit our Flask app and handle the responses. In this section, we're going to look more closely at the code in `main.js`, specifically the Ajax and XHR requests.
+This application relies on Javascript and jQuery to hit our Flask app and handle the responses. This section shows how each of the web services that we've created are called using XHR and AJAX, and how we've introduced some interactivity, like automatically choosing a voice based on the language selected by the user.
 
 ## Calling the translate-text route
 
@@ -100,6 +98,8 @@ $("#sentiment-analysis").on("click", function(e) {
 
 ## Calling the text-to-speech route
 
+Unlike the other calls to our web service, this function uses XHR. XHR includes support for binary data that doesn't work out of the box with AJAX. You'll notice that on success, the audio is loaded and played.
+
 ```javascript
 // Convert text-to-speech
 $("#text-to-speech").on("click", function(e) {
@@ -128,5 +128,75 @@ $("#text-to-speech").on("click", function(e) {
     }
   }
   xhr.send(JSON.stringify(ttsRequest));
+});
+```
+
+## Automagically select a TTS voice
+
+You'll notice this is verbose. The reason being that the language codes vary between Translator Text and the Speech Service. To make this easier, a future patch would be to create a mapping, then iterate over that mapping, significantly reducing the code footprint.
+
+```javascript
+// Automatic voice font selection based on translation output.
+$('select[id="select-language"]').change(function(e) {
+  if ($(this).val() == "ar"){
+    document.getElementById("select-voice").value = "(ar-SA, Naayf)";
+  }
+  if ($(this).val() == "ca"){
+    document.getElementById("select-voice").value = "(ca-ES, HerenaRUS)";
+  }
+  if ($(this).val() == "zh-Hans"){
+    document.getElementById("select-voice").value = "(zh-HK, Tracy, Apollo)";
+  }
+  if ($(this).val() == "zh-Hant"){
+    document.getElementById("select-voice").value = "(zh-HK, Tracy, Apollo)";
+  }
+  if ($(this).val() == "hr"){
+    document.getElementById("select-voice").value = "(hr-HR, Matej)";
+  }
+  if ($(this).val() == "en"){
+    document.getElementById("select-voice").value = "(en-US, Jessa24kRUS)";
+  }
+  if ($(this).val() == "fr"){
+    document.getElementById("select-voice").value = "(fr-FR, HortenseRUS)";
+  }
+  if ($(this).val() == "de"){
+    document.getElementById("select-voice").value = "(de-DE, HeddaRUS)";
+  }
+  if ($(this).val() == "el"){
+    document.getElementById("select-voice").value = "(el-GR, Stefanos)";
+  }
+  if ($(this).val() == "he"){
+    document.getElementById("select-voice").value = "(he-IL, Asaf)";
+  }
+  if ($(this).val() == "hi"){
+    document.getElementById("select-voice").value = "(hi-IN, Kalpana, Apollo)";
+  }
+  if ($(this).val() == "it"){
+    document.getElementById("select-voice").value = "(it-IT, LuciaRUS)";
+  }
+  if ($(this).val() == "ja"){
+    document.getElementById("select-voice").value = "(ja-JP, HarukaRUS)";
+  }
+  if ($(this).val() == "ko"){
+    document.getElementById("select-voice").value = "(ko-KR, HeamiRUS)";
+  }
+  if ($(this).val() == "pt"){
+    document.getElementById("select-voice").value = "(pt-BR, HeloisaRUS)";
+  }
+  if ($(this).val() == "ru"){
+    document.getElementById("select-voice").value = "(ru-RU, EkaterinaRUS)";
+  }
+  if ($(this).val() == "es"){
+    document.getElementById("select-voice").value = "(es-ES, HelenaRUS)";
+  }
+  if ($(this).val() == "th"){
+    document.getElementById("select-voice").value = "(th-TH, Pattara)";
+  }
+  if ($(this).val() == "tr"){
+    document.getElementById("select-voice").value = "(tr-TR, SedaRUS)";
+  }
+  if ($(this).val() == "vi"){
+    document.getElementById("select-voice").value = "(vi-VN, An)";
+  }
 });
 ```
