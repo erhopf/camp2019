@@ -2,10 +2,10 @@
 title: Challenge: Computer Vision
 nav_order: 4
 parent: Extra credit
-permalink: /deploy
+permalink: /challenge
 ---
 
-# Learn how to deploy your app to Azure
+# Challenge: Try adding Computer Vision to your app
 
 Now that you've built and app and have access to the code, how would you leverage the Computer Vision API to get the text from an image and translate it?
 
