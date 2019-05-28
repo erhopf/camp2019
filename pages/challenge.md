@@ -1,8 +1,9 @@
 ---
-title: Challenge: Computer Vision
+title: "Challenge: Add Computer Vision to your app"
 nav_order: 4
 parent: Extra credit
 permalink: /challenge
+nav_exclude: true
 ---
 
 # Challenge: Try adding Computer Vision to your app
