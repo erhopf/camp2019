@@ -1,7 +1,6 @@
 ---
 title: Support channels
 nav_order: 9
-has_children: false
 permalink: /support-channels
 ---
 
