@@ -13,6 +13,8 @@ We're glad that you could join us for today's workshop. In the next hour, we're 
 
 Our focus is on the Python code and Flask routes that enable our application. We won't spend much time on the Javascript that controls the front-end, but provide all the files for you to inspect after this session (if you're a master in the art of jQuery - don't be shy, submit a PR).
 
+If you get stuck during the workshop on May 28, 2019, please use one of our [support channels](support-channels) for help.
+
 After this session, if you have any questions or want to say hi, just drop a line: [erhopf@microsoft.com](mailto:erhopf@microsoft.com)
 
 ## What is Flask?
