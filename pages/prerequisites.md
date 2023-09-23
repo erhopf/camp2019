@@ -19,14 +19,8 @@ Hopefully you had some time before this workshop to install the prerequisite sof
 
 In case you haven't had time to get keys, we have two that are valid for the next 7 days. Make note of these, you'll need these throughout the workshop. If you have your own keys, you can skip this step.
 
-1. A **Cognitive Services** subscription key in the **West US** region. Feel free to use this key for the workshop, however, it will expire in 7 days:
-   ```
-   11a083f7733b4d118a60fb35c4424b90
-   ```
-2. A **Speech Services** subscription key in the **West US** region. Feel free to use this key for the workshop, however, it will expire in 7 days:
-   ```
-   ef3530a752de4b5d9428d79dd267428b
-   ```
+1. A **Cognitive Services** subscription key in the **West US** region. 
+2. A **Speech Services** subscription key in the **West US** region. 
 
 ## Sign-up for an Azure account
 {: .no_toc }
